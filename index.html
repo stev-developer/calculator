@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body id="fullPage">
+    
+        <!-- <ul class="bar">
+            <li><a href="#"><b>Home</b></a></li>
+            <li><a href="#"><b>Contact</b></a></li>
+            <li><a href="#"><b>Hellp</b></a></li>
+        </ul>
+        <div id="colorchangebtn">
+            <button id="btn-1" class="btnA" onclick="changeColor('red')"></button>
+            <button id="btn-2" class="btnA" onclick="changeColor('blue')"></button>
+            <button id="btn-3" class="btnA" onclick="changeColor('green')"></button>
+            <button id="btn-4" class="btnA" onclick="changeColor('yellow')"></button>
+        </div> -->
+        
+        <div class="container">
+            <div class="calculator">
+                <h3>CALCULATOR</h3>
+                <input type="text" placeholder="0" id="outputdisplay">
+                <button class="btn" onclick="Clear()">C</button>  
+                <button class="btn" onclick="DLE()">DLE</button> 
+                <button class="btn" onclick="display('%')">%</button> 
+                <button class="btn" onclick="display('/')">/</button> 
+                <button class="btn" onclick="display('1')">1</button> 
+                <button class="btn" onclick="display('2')">2</button> 
+                <button class="btn" onclick="display('3')">3</button> 
+                <button class="btn" onclick="display('*')">*</button> 
+                <button class="btn" onclick="display('4')">4</button> 
+                <button class="btn" onclick="display('5')">5</button> 
+                <button class="btn" onclick="display('6')">6</button> 
+                <button class="btn" onclick="display('-')">-</button> 
+                <button class="btn" onclick="display('7')">7</button> 
+                <button class="btn" onclick="display('8')">8</button>
+                <button class="btn" onclick="display('9')">9</button>
+                <button class="btn" onclick="display('+')">+</button>
+                <button class="btn" onclick="display('.')">.</button>
+                <button class="btn" onclick="display('0')">0</button>
+                <button class="btn" onclick="calculate()" id="equal">=</button>
+            </div>
+        </div>
+       
+    <script>
+        let output = document.getElementById("outputdisplay");
+
+        function display(value){
+            outputdisplay.value += value;
+        }
+        function calculate(){
+            try{
+                outputdisplay.value = eval(outputdisplay.value);
+            }
+            catch(err)
+            {
+                alert("Invalid");
+            }
+            
+        }
+        function Clear(){
+            outputdisplay.value = "";
+        }
+        function DLE(){
+            outputdisplay.value = outputdisplay.value.slice(0,-1);
+        }
+        function changeColor(value){
+            document.getElementById("fullPage").style.backgroundColor = value;
+        }
+
+
+
+     
+    </script>
+   
+</body>
+</html>

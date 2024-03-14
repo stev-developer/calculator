@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    outline: none;
+    background-color: #20c042;
+}
+#colorchangebtn{
+    margin-left: 350px;
+}
+.btnA{
+    padding: 10px;
+    margin: 4px;
+    cursor: pointer;
+    color: aqua;
+    border-radius: 50%;
+    border: none;
+    transition: .2s ease-in;
+}
+#btn-1{
+    background-color: red;
+}
+#btn-1:hover{
+    box-shadow: 0px 0px 10px red, 0px 0px 40px red, 0px 0px 80px red;
+}
+#btn-2{
+    background-color: blue;
+}
+#btn-2:hover{
+    box-shadow: 0px 0px 10px blue, 0px 0px 40px blue, 0px 0px 80px blue;
+}
+#btn-3{
+    background-color: green;
+}
+#btn-3:hover{
+    box-shadow: 0px 0px 10px green, 0px 0px 40px green, 0px 0px 80px green;
+}
+#btn-4{
+    background-color: yellow;
+}
+#btn-4:hover{
+    box-shadow: 0px 0px 10px yellow, 0px 0px 40px yellow, 0px 0px 80px yellow;
+}
+.bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+li{
+    padding-right: 30px;
+
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: #20c042;
+    font-size: 20px;
+}
+li :hover{
+    background-color: #0a0a0a;
+    padding: 5px;
+    border-radius: 20px;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.calculator{
+    background-color: #0a0a0a;
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: inset 5px 5px 12px #034010,
+                       5px 5px 12px rgba(0,0,0,.16);
+    
+    display: grid;
+    grid-template-columns: repeat(4,70px); 
+     
+                     
+}
+h3{
+    color: #20c042;
+    margin-left: 80px;
+}
+input{
+    grid-column: span 4;
+    height: 60px;
+    width: 260px;
+    background-color: #0a0a0a;
+    box-shadow: inset -1px -1px 6px #ffffff,
+                inset 1px 1px 6px rgba(0,0,0,.16);
+    border: none;
+    border-radius: 10px;
+    color: #20c042;             
+    text-align: end;
+    padding: 20px;
+    font-size: 35px; 
+    margin: auto;
+    margin-top: 20px; 
+    margin-bottom: 10px;         
+}
+
+.btn{
+    height: 50px;
+    width: 50px;
+    background-color: #0a0a0a;
+    box-shadow: -1px -1px 6px #ffffff,
+                 1px 1px 6px rgba(0,0,0,.16);
+    border: none;
+    border-radius: 10px;
+    margin: 8px;
+    font-size: 20px;
+    color: #20c042;             
+}
+#equal{
+    width: 120px;
+    border-radius: 10px;
+    background-color: #0a0a0a;
+    box-shadow: -1px -1px 6px #ffffff,
+                 1px 1px 6px rgba(0,0,0,.16);
+}
